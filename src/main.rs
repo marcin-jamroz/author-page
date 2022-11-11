@@ -32,7 +32,7 @@ impl Component for Model {
 
         html! {
             <div>
-                <button onclick={link.callback(|_| Msg::AddOne)} >{"+1"}</button>
+                <button onclick={link.callback(|_| Msg::AddOne)} >{"Counter +1"}</button>
                 <p>{self.value}</p>
             </div>
         }
@@ -40,6 +40,5 @@ impl Component for Model {
 }
 
 fn main() {
-    println!("Hello, world!");
     yew::start_app::<Model>();
 }
